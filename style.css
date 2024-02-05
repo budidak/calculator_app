@@ -21,3 +21,129 @@ body {
   align-items: center;
   text-align: center;
 }
+
+.calc {
+  border: 1px solid #222;
+}
+
+.calc-screen {
+  font-size: 3rem;
+  color: #fff;
+  background-color: #222;
+  cursor: text;
+  text-align: right;
+  padding: 4rem;
+  border: 1px solid #222;
+}
+
+.calc-btns {
+  display: grid;
+  grid-template-areas:
+    "sym-del  sym-c  sym-ce      sym-divide"
+    "num-7    num-8  num-9       sym-multiply"
+    "num-4    num-5  num-6       sym-minus"
+    "num-1    num-2  num-3       sym-plus"
+    "num-0    num-0  sym-period  sym-equals";
+}
+
+.btn {
+  min-height: 10rem;
+  min-width: 10rem;
+  font-size: 2rem;
+  border: 1px solid #222;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.sym {
+  background-color: #cfd0ff;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.sym:hover {
+  background-color: #dcdcfa;
+}
+
+.btn-9 {
+  grid-area: num-9;
+}
+
+.btn-8 {
+  grid-area: num-8;
+}
+
+.btn-7 {
+  grid-area: num-7;
+}
+
+.btn-6 {
+  grid-area: num-6;
+}
+
+.btn-5 {
+  grid-area: num-5;
+}
+
+.btn-4 {
+  grid-area: num-4;
+}
+
+.btn-3 {
+  grid-area: num-3;
+}
+
+.btn-2 {
+  grid-area: num-2;
+}
+
+.btn-1 {
+  grid-area: num-1;
+}
+
+.btn-0 {
+  grid-area: num-0;
+}
+
+.btn-plus {
+  grid-area: sym-plus;
+}
+
+.btn-minus {
+  grid-area: sym-minus;
+}
+
+.btn-divide {
+  grid-area: sym-divide;
+}
+
+.btn-multiply {
+  grid-area: sym-multiply;
+}
+
+.btn-equals {
+  grid-area: sym-equals;
+}
+
+.btn-period {
+  grid-area: sym-period;
+}
+
+.btn-c {
+  grid-area: sym-c;
+}
+
+.btn-ce {
+  grid-area: sym-ce;
+}
+
+.btn-del {
+  grid-area: sym-del;
+}
